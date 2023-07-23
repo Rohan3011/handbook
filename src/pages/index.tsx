@@ -4,7 +4,7 @@ import { api } from "@/utils/api";
 import { Button } from "@/components/ui/button";
 import ModeTheme from "@/components/toggle-theme";
 
-export default function Home() {
+export default function HomePage() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
