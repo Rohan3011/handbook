@@ -18,7 +18,7 @@ import {
 
 export default function ProjectCard() {
   return (
-    <Card className="">
+    <Card>
       <CardHeader>
         <CardTitle>Card Title</CardTitle>
         <CardDescription>Card Description</CardDescription>
@@ -40,9 +40,11 @@ export default function ProjectCard() {
                 <Icons.edit className="mr-2 h-4 w-4" />
                 <span>Edit</span>
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem className="focus:bg-destructive">
                 <Icons.trash className="mr-2 h-4 w-4" />
-                <span className="text-destructive">Delete</span>
+                <span className="focus:text-destructive-foreground">
+                  Delete
+                </span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

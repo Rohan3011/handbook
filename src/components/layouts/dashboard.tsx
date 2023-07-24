@@ -4,6 +4,7 @@ import { UserAccountNav } from "../user-account-nav";
 import { useSession } from "next-auth/react";
 import { MainNav } from "../main-nav";
 import { DashboardNav } from "../dashboard-nav";
+import { SiteFooter } from "../site-footer";
 
 interface DashboardLayoutProps {
   children?: React.ReactNode;
@@ -36,7 +37,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           {children}
         </main>
       </div>
-      {/* <SiteFooter className="border-t" /> */}
+      <SiteFooter className="border-t" />
     </div>
   );
 }
